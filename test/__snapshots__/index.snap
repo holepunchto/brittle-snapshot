@@ -1,0 +1,9 @@
+=== works > 1 ===
+hello world!
+=== works > 2 ===
+{
+  "foo": "bar",
+  "baz": "qux"
+}
+=== works > 3 ===
+body { color: red; }

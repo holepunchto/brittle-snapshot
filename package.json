@@ -1,13 +1,27 @@
 {
-  "name": "@holepunchto/repo-template",
-  "version": "0.0.1",
-  "description": "repo-template",
+  "name": "brittle-snapshot",
+  "version": "1.0.0",
+  "description": "Traditional snapshots for brittle",
   "main": "index.js",
   "exports": {
     "./package": "./package.json",
     ".": {
       "types": "./index.d.ts",
       "default": "./index.js"
+    }
+  },
+  "imports": {
+    "fs": {
+      "bare": "bare-fs",
+      "default": "fs"
+    },
+    "process": {
+      "bare": "bare-process",
+      "default": "process"
+    },
+    "path": {
+      "bare": "bare-path",
+      "default": "path"
     }
   },
   "files": [
@@ -35,5 +49,11 @@
   "bugs": {
     "url": "https://github.com/holepunchto/repo-template/issues"
   },
-  "homepage": "https://github.com/holepunchto/repo-template"
+  "homepage": "https://github.com/holepunchto/repo-template",
+  "dependencies": {
+    "bare-fs": "^4.5.5",
+    "bare-path": "^3.0.0",
+    "bare-process": "^4.3.0",
+    "diff": "^8.0.3"
+  }
 }
